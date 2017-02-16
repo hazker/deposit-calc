@@ -7,6 +7,10 @@ float d,s,c;
 	scanf("%f",&s);
 	printf("Vvedite srok");
 	scanf("%f",&c);
+	if(s<10 || c>365){
+		printf("WRONG");
+		return 0;
+	}
 	if(s<100){
 		if (c>30 && c<121){
 			d=s*1.02;
