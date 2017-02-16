@@ -3,11 +3,11 @@
 
 int main(){
 float d,s,c;
-	printf("Vvedit summu vklada ");
+	printf("Vvedit summu vklada(v tisachah)-\n");
 	scanf("%f",&s);
-	printf("Vvedite srok");
+	printf("Vvedite srok(v dnyah)-\n");
 	scanf("%f",&c);
-	if(s<10 || c>365){
+	if(s<9.9 || c>365){
 		printf("WRONG");
 		return 0;
 	}
@@ -39,5 +39,6 @@ float d,s,c;
 			d=s*1.15;
 		}
 	}
-	return 0;
+	printf("DOXOD= %f",d);
+		return 0;
 }
