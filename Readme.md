@@ -1,1 +1,1 @@
-Variant:¹2
+Variant:â„–2
