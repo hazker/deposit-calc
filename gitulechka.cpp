@@ -1,4 +1,3 @@
-#include <iostream>
 #include <stdio.h>
 
 void Check(int s, int c);
