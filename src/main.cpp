@@ -8,7 +8,6 @@ float d,s,c;
 	scanf("%f",&s);
 	printf("Vvedite srok(v dnyah)-\n");
 	scanf("%f",&c);
-	Check(s,c);
 	Cash(d,s,c);
 	return 0;
 }

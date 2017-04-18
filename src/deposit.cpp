@@ -9,7 +9,7 @@ void Check(int s, int c){
 }
 
 float Cash(float d,int s, int c){
-	if(s<100){
+	if(s<101){
 		if (c>30 && c<121){
 			d=s*1.02;
 		}
