@@ -3,11 +3,13 @@
 #include "deposit.cpp"
 
 int main(){
-float d,s,c;
+float d=0;
+int s,c;
 	printf("Vvedit summu vklada(v tisachah)-\n");
-	scanf("%f",&s);
+	scanf("%d",&s);
 	printf("Vvedite srok(v dnyah)-\n");
-	scanf("%f",&c);
+	scanf("%d",&c);
+	Check(s,c);
 	Cash(d,s,c);
 	return 0;
 }
