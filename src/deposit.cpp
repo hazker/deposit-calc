@@ -2,7 +2,7 @@
 #include "deposit.h"
 
 void Check(int s, int c){
-	if(s<10 || c>365){
+	if(s<10 || c>365 || c<0){
 	printf("Wrong, TRY AGAIN \n");
 	main();
 }
