@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include "deposit.h"
 
-void Check(int s, int c){
+
+int Check(int s, int c){
 	if(s<10 || c>365 || c<0){
 	printf("Wrong, TRY AGAIN \n");
-	main();
+	return 1;
 }
+return 0;
 }
 
 float Cash(float d,int s, int c){
@@ -37,6 +39,5 @@ float Cash(float d,int s, int c){
 			d=s*1.15;
 		}
 	}
-	printf("DOXOD= %f",d);
-		return 0;
+		return d;
 }
