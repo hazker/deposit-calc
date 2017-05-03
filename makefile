@@ -4,6 +4,7 @@ EXECUTABLE=bin/program
 SRC_BUILD_DIR=build/
 SRC_DIR=src/
 
+
 all: makedir compile
 
 makedir:
@@ -18,8 +19,6 @@ $(SRC_BUILD_DIR)/main.o: $(SRC_DIR)/main.cpp
 $(SRC_BUILD_DIR)/deposit.o: $(SRC_DIR)/deposit.cpp
 	$(CC) $(CFLAGS) -c $(SRC_DIR)/deposit.cpp -o $(SRC_BUILD_DIR)/deposit.o
 
-.c.o:
-	$(CC) $(CFLAGS) $< -o $@
-
+.PHONY :clean 
 clean:
 	rm -rf build/ bin/
