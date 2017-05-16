@@ -46,7 +46,7 @@
  CTEST(MoreBlockTests, goodDataPass115)
  {
      const int result = Cash(0,60, 60);
-     const int expected = 241.500000;
+     const int expected = 61.200001;
      ASSERT_EQUAL(expected, result);
  }
 CTEST(Test_Faild, Failtest01)
