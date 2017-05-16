@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "deposit.h"
-#include "deposit.cpp"
+//#include "deposit.c"
 
 int main(){
 float d=0;
