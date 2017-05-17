@@ -1,4 +1,4 @@
 language: c
 script: 
 - make
-- ./a.out
+- ./bin/test
