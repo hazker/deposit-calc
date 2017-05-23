@@ -15,35 +15,35 @@
      ASSERT_EQUAL(expected, result);
  }
  
- CTEST(CashCalculationTest , GoodAmountAndTime)
+ CTEST(CashCalculationTest , GoodAmount200AndTime150)
  {
      const int result = Cash(0,200, 150);
      const int expected = 216.000000;
      ASSERT_EQUAL(expected, result);
  }
  
- CTEST(CashCalculationTest , GoodAmountAndTime)
+ CTEST(CashCalculationTest , GoodAmount300AndTime90)
  {
      const int result = Cash(0,300, 90);
      const int expected = 309.000000;
      ASSERT_EQUAL(expected, result);
  }
  
- CTEST(CashCalculationTest , GoodAmountAndTime)
+ CTEST(CashCalculationTest , GoodAmount100AndTime20)
  {
      const int result = Cash(0,100, 20);
      const int expected = 90.000000;
      ASSERT_EQUAL(expected, result);
  }
  
- CTEST(CashCalculationTest , GoodAmountAndTime)
+ CTEST(CashCalculationTest , GoodAmount210AndTime300)
  {
      const int result = Cash(0,210, 300);
      const int expected = 241.500000;
      ASSERT_EQUAL(expected, result);
  }
  
- CTEST(CashCalculationTest , GoodAmountAndTime)
+ CTEST(CashCalculationTest , GoodAmount60AndTime60)
  {
      const int result = Cash(0,60, 60);
      const int expected = 61.200001;
