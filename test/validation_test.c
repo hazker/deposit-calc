@@ -1,35 +1,35 @@
 #include "deposit.h"
 #include "ctest.h"
 
-CTEST(InputValidation, BordersCheckPassedLeft)
+CTEST(InputDataCheck, CheckTimeLeftBorder)
 {
     const int result = Check(0, 0);
     const int expected = 1;
     ASSERT_EQUAL(expected, result);
 }
 
-CTEST(InputValidation, BordersCheckPassedRight)
+CTEST(InputDataCheck, CheckTimeRightBorder)
 {
-    const int result = Check(20, 100);
-    const int expected = 0;
+    const int result = Check(0, 365);
+    const int expected = 1;
     ASSERT_EQUAL(expected, result);
 }
 
-CTEST(InputValidation, durationLessZeroFail)
+CTEST(InputDataCheck, CheckAmountLessThanZero)
 {
     const int result = Check(-5, 0);
     const int expected = 1;
     ASSERT_EQUAL(expected, result);
 }
 
-CTEST(InputValidation, amountLessZeroFail)
+CTEST(InputDataCheck, CheckTimeLessThanZero)
 {
     const int result = Check(5, -100);
     const int expected = 1;
     ASSERT_EQUAL(expected, result);
 }
 
-CTEST(InputValidation, durationAndAmountRangeTestPass)
+CTEST(InputDataCheck, CheckNormalAmountAndTime)
 {
     const int result = Check(30, 1000);
     const int expected = 1;
